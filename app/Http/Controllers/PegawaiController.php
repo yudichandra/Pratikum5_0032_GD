@@ -16,7 +16,10 @@ class PegawaiController extends Controller
     {
         $data_pegawai=Pegawai::get();
         return view('pegawai',compact('data_pegawai'));
+        {
         $data_pegawai=Pegawai::table('data_pegawai')->paginate(5);
+        return view('pegawai', ['data_pegawai' => $data_pegawai]);
+        }
     }
 
     /**

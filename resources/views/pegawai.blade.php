@@ -30,7 +30,7 @@
         <td>{{ $pgw->gender}}</td>
         <td>{{ $pgw->status}}</td>
 </tr>
-
+<!--{{ $data_pegawai->links() }}-->
 @endforeach
 
 @else
