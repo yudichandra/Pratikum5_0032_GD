@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DepartemenController;
+use App\Http\Controllers\PegawaiController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/departemen', [DepartemenController::class, 'index']);
-Route::get('/pegawai',function(){
+Route::get('/pegawai',[PegawaiController::class, 'index']);
+function(){
     return view('pegawai');
-});
+};
